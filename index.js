@@ -1,4 +1,4 @@
-let score = -1;
+let score = 99.3;
 if(score > 100){
     console.log("Invalid Score");
 }else if(score >= 90){
