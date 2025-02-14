@@ -1,5 +1,7 @@
-let score = 92;
-if(score >= 90){
+let score = -1;
+if(score > 100){
+    console.log("Invalid Score");
+}else if(score >= 90){
     console.log("A");
 }else if(score >=80){
     console.log("B");

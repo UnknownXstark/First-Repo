@@ -3,3 +3,133 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
+
+/* .box{
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    margin: 10%;
+    animation-name: color-change;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes color-change {
+    from{
+        background-color: cadetblue;
+        width: 200px;
+        transform: translateX(200px);
+    }
+    to{
+        background-color: slategrey;
+        width: 1000px;
+        transform: translateY(300px);
+    }
+
+    0%{
+        background-color: cadetblue;
+    }
+    40%{
+        background-color: aqua;
+    }
+    80%{
+        background-color: teal;
+    }
+    100%{
+        background-color: slategrey;
+    }
+} */
+.box{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.dot{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: 0.5s ease-in-out;
+}
+
+.dot:nth-child(2){
+    animation-delay: 0.1s;
+}
+.dot:nth-child(3){
+    animation-delay: 0.2s;
+}
+.dot:nth-child(3){
+    animation-delay: 0.3s;
+}
+.dot:nth-child(4){
+    animation-delay: 0.4s;
+}
+.dot:nth-child(5){
+    animation-delay: 0.5s;
+}
+.dot:nth-child(even){
+    background-color: mediumseagreen;
+}
+.dot:nth-child(odd){
+    background-color: aquamarine;
+}
+@keyframes load {
+    from{
+        /* transform: translateY(20px); */
+        transform: scale(1.5);
+    }
+    to{
+        /* transform: translateY(opx); */
+        transform: scale(1);
+    }
+}
+
+.load-box{
+    height: 5%;
+    width: 30%;
+    background-color: white;
+    border-radius: 25px;
+}
+.loader{
+    width: 0%;
+    height: 100%;
+    background-color: grey;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    animation-name: longloader;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes longloader {
+    0%{
+        width: 10%;
+    }
+    20%{
+        width: 25%;
+    }
+    40%{
+        width: 40%;
+    }
+    60%{
+        width: 60%;
+    }
+    80%{
+        width: 75%;
+    }
+    100%{
+        width: 100%;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
